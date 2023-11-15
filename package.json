@@ -1,6 +1,7 @@
 {
   "name": "firestore-import-tool",
   "version": "1.0.0",
+  "type": "module",
   "description": "CLI tool to import csv or json files to firestore databases",
   "main": "index.js",
   "scripts": {
