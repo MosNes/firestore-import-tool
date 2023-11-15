@@ -103,32 +103,13 @@ async function readCSV(path) {
     
     try {
         const jsonArray = await csv().fromFile(path);
+        console.log(`CSV read complete. ${jsonArray.length} lines parsed.`)
         return jsonArray;
+
     } catch(err) {
         console.log('Error reading CSV file:', err);
     }
     
-    // wrap the csvtojson module function in a promise, since it is based on callbacks
-//     return new Promise((resolve, reject) => {
-
-        
-//         let lineCount = 0;
-
-//         csv()
-//             .fromFile(path)
-//             // on each line, convert to javascript object and increment line count
-//             .on('json', data => {
-//                 // fired on every row read
-//                 lineCount++;
-//             })
-//             // on reaching end of file, resolve the promise
-//             .on('end parsed', data => {
-//                 console.info(`CSV read complete. ${lineCount} lines parsed.`);
-//                 resolve(data);
-//             })
-//             // on error, reject the promise
-//             .on('error', err => reject(err));
-//     });
 }
 
 // Run function
