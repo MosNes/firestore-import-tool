@@ -41,9 +41,8 @@ program
     .option('-i, --id [id]', 'Field to use for Document ID')
     .parse(process.argv);
 
+// get command line arguments
 const args = program.opts();
-console.log('Input args:', args);
-
 
 // main migration function
 async function migrate() {
