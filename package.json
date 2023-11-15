@@ -1,0 +1,14 @@
+{
+  "name": "firestore-import-tool",
+  "version": "1.0.0",
+  "description": "CLI tool to import csv or json files to firestore databases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MosNes",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
